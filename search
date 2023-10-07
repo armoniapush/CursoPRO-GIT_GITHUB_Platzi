@@ -1,0 +1,52 @@
+diff --git a/edit.txt b/edit.txt
+index 61dd8c5..5b18db4 100644
+--- a/edit.txt
++++ b/edit.txt
+@@ -1,4 +1,5 @@
+ Editores de Código e IDEs
++------------------------------
+ Los editores de código y los entornos de desarrollo integrados (IDEs) son herramientas esenciales para programadores. Funcionan como un bloc de notas avanzado que facilita la escritura de código. Algunos de los editores más populares incluyen VSCode, Sublime Text y Atom, aunque no es necesario utilizar uno específico para programar. Un IDE proporciona un conjunto completo de herramientas para desarrollo, como depuración y compilación.
+ 
+ Tipos de Archivos y sus Diferencias
+@@ -9,35 +10,11 @@ Archivos RTF (.rtf): Los archivos RTF permiten guardar texto con diferentes tama
+ Archivos de Word (.docx): Estos archivos pueden contener texto con diferentes estilos, imágenes y formatos. Al abrirlos en un editor de código, verás que están en formato binario, lo que los hace difíciles de entender. Word está optimizado para interpretar este código y representarlo gráficamente.
+ 
+ 
++-----------------------------
+ 
+- habilitar la opción para mostrar las extensiones de los archivos para identificarlos correctamente. En Windows, puedes hacerlo en "Vista > Mostrar u ocultar > Extensiones de nombre de archivo".
++Vamos Bien! 
+ 
++---------------------------
+ 
+-
+-Conceptos Importantes de Git:
+-
+-Bug: Un error en el código que causa un comportamiento no deseado.
+-
+-Repositorio (Repository): Donde se almacena todo el proyecto, puede estar en local o remoto. Contiene un historial de versiones y la relación entre cada versión para crear el árbol de versiones con ramificaciones.
+-
+-Fork: Cuando deseamos contribuir a un proyecto de otra persona o utilizarlo como punto de partida para nuestro propio proyecto, hacemos un "fork".
+-
+-Clone: Para trabajar en un proyecto después de hacer un fork, necesitamos clonar el repositorio en nuestra computadora.
+-
+-Branch: Una bifurcación del proyecto que se utiliza para agregar nuevas funcionalidades o corregir errores.
+-
+-Master: La rama donde se almacena la última versión estable del proyecto, que se encuentra en producción. Debería estar libre de errores y sirve como referencia para desarrollar nuevas funcionalidades.
+-
+-Commit: Subir cambios a la versión local del repositorio. Permite trabajar en la rama local sin afectar las versiones remotas.
+-
+-Push: Enviar todos los cambios confirmados con un commit al repositorio remoto, donde se combinan con el trabajo de otros.
+-
+-Checkout: Descargar una rama del repositorio GIT local o remoto para trabajar en ella.
+-
+-Fetch: Actualizar el repositorio local descargando datos del repositorio remoto sin aplicar cambios locales.
+-
+-Merge: Combinar la copia del repositorio remoto con el repositorio local, mezclando códigos diferentes.
+-
+-Pull: Unión de Fetch y Merge, recoge información del repositorio remoto y mezcla el trabajo local con ella.
+-
+-Diff: Mostrar las diferencias entre dos versiones del mismo archivo.
+\ No newline at end of file
++Voy a ser el mejor cientifico de datos del mundo!
++Animo sí se puede!
