@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="la">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablillas de los Sabios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f; /* Fondo negro */
+            color: #ffffff; /* Letras blancas */
+        }
+
+        header {
+            background-color: #6A5ACD; /* Violeta medio */
+            color: #FFD700; /* Dorado */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333333; /* Gris oscuro */
+        }
+
+        /* Estilo para el texto encriptado */
+        .encrypted {
+            display: none; /* Inicialmente oculto */
+            font-size: 18px;
+            background-color: #000000; /* Fondo negro */
+            padding: 20px; /* Mayor espacio alrededor del texto */
+            border: 1px solid #2b00ff; /* Borde para resaltar el mensaje */
+            color: #000003; /* Texto */
+            text-align: center; /* Centrar el texto */
+            line-height: 1.6; /* Espacio entre líneas aumentado */
+        }
+
+        .highlight {
+            color: #e4e4e4; /* Cambia el color a verde cuando se pasa el puntero */
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #6A5ACD; /* Violeta medio */
+            color: #FFD700; /* Dorado */
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mensajes Secretos de la Orden</h1>
+    </header>
+    <div class="container">
+        <h2>Usa la <span class="highlight" id="highlightWord">luz</span> de tu atención para descifrar el mensaje</h2>
+        <p id="encryptedMessage" class="encrypted"></p>
+    </div>
+
+    <script>
+        // Función para desencriptar el mensaje
+        function decryptMessage() {
+            const messageLines = [
+                "I - In tenebris lucem invenimus.",
+                "II - Intra vos et invenietis veritatem.",
+                "III - Terrae omnia purificando.",
+                "IV - Rectificando omnia et unum faciendo.",
+                "V - Lapidem philosophorum.",
+                "VI - Unitatem et veritatem invenietis.",
+                "VII - Mundum interius et exterius contemplamini."
+            ];
+
+            const encryptedLines = [
+                "I23i p8 e712i8145 l21u3i34 92357l 9i34v57u35i13.",
+                "I239nt13r35 9214s 5137 9i34n35t13s 9835i35it9s 9456v53r9t13m.",
+                "T571345 934m1491 9581i14351 9456l.",
+                "R531t3493c4813nd9 9318m513t157 5137 9281u4n 6c9nd9 9813nd9.",
+                "L92135p9d9417m 9351ph153r9l17.",
+                "U951t1t13m 5137 9851v9t1t13m 9n9319t1s.",
+                "M951nd951t m5327r9195 5137 9xt9519r951u5 3983195 c9313nt1595l17."
+            ];
+
+            const decryptedMessage = messageLines.map((line, index) => {
+                return line + ' ' + encryptedLines[index];
+            });
+
+            document.getElementById("encryptedMessage").textContent = decryptedMessage.join("\n");
+        }
+
+        const highlightWord = document.getElementById("highlightWord");
+        const encryptedMessage = document.getElementById("encryptedMessage");
+
+        // Muestra el mensaje oculto al pasar el cursor sobre la palabra "luz"
+        highlightWord.addEventListener("mouseover", function() {
+            encryptedMessage.style.display = "block";
+            decryptMessage();
+
+            // Oculta el mensaje después de 5 segundos
+            setTimeout(function() {
+                encryptedMessage.style.display = "none";
+            }, 6000); // 6000 milisegundos (6 segundos)
+        });
+    </script>
+    <footer>Que los dioses te bendigan</footer>
+</body>
+</html>
