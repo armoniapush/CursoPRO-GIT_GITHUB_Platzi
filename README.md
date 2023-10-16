@@ -48,6 +48,6 @@ Si deseas contribuir a este curso, ¡eres bienvenido! Sigue estos pasos:
 
 Esperamos que este curso te ayude a dominar Git y GitHub y a llevar tus proyectos de desarrollo al siguiente nivel. ¡Diviértete aprendiendo! 😄
 
-## 📜 Licencia
+### 📜 Licencia
 
 Este curso se distribuye bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
